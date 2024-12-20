@@ -1,0 +1,45 @@
+/* Estilo para la Facultad de Administración */
+body {
+    background-color: #fdf8e2; 
+    color: #5d6d7e; 
+    font-family: 'Helvetica', sans-serif;
+}
+
+h1 {
+    color: #f39c12; 
+    font-size: 36px;
+    text-align: center;
+}
+
+a {
+    color: #e67e22; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: #f5f5f5;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #5d6d7e; 
+    font-size: 20px;
+}
+
+h2 {
+    color: #e74c3c; 
+}

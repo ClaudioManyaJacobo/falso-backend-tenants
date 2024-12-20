@@ -1,0 +1,45 @@
+/* Estilo para la Facultad de Sistemas */
+body {
+    background-color: #ecf1f3; 
+    color: #2c3e50; 
+    font-family: 'Verdana', sans-serif;
+}
+
+h1 {
+    color: #2980b9; 
+    font-size: 36px;
+    text-align: center;
+}
+
+a {
+    color: #3498db; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: #ecf0f1;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #2c3e50; 
+    font-size: 20px;
+}
+
+h2 {
+    color: #2980b9; 
+}

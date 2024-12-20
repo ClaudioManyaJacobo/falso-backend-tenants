@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Event</title>
+</head>
+<body>
+    <h1>Edit Event for {{ tenant_name }}</h1>
+    <form method="POST">
+        <label for="name">Event Name:</label>
+        <input 
+            type="text" 
+            id="name" 
+            name="name" 
+            value="{{ event.name }}" 
+            required>
+        <br>
+
+        <label for="description">Description:</label>
+        <textarea 
+            id="description" 
+            name="description" 
+            required>{{ event.description }}</textarea>
+        <br>
+
+        <label for="date">Event Date:</label>
+        <input 
+            type="datetime-local" 
+            id="date" 
+            name="date" 
+            value="{{ event.date.strftime('%Y-%m-%dT%H:%M') if event.date else '' }}" 
+            required>
+        <br>
+
+        <label for="location">Location:</label>
+        <input 
+            type="text" 
+            id="location" 
+            name="location" 
+            value="{{ event.location }}" 
+            required>
+        <br>
+
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

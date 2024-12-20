@@ -1,0 +1,45 @@
+/* Estilo para la Facultad de Zootecnia */
+body {
+    background-color: #eef5e1; 
+    color: #3d4c2e;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #7dbd29; 
+    font-size: 36px;
+    text-align: center;
+}
+
+a {
+    color: #5a9a2b; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    background-color: #dff0d8; 
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #3d4c2e; 
+    font-size: 20px;
+}
+
+h2 {
+    color: #6c8b2b;
+}

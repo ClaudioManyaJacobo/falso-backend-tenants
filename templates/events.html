@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events for {{ tenant_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' + css_file) }}">
+</head>
+<body>
+    <h1>Eventos para la Facultad de {{ tenant_name }}</h1>
+    <a href="{{ url_for('new_event', tenant_name=tenant_name) }}">New Event</a>
+    <ul>
+        {% for event in events %}
+        <li>
+            <strong>{{ event.name }}</strong> - {{ event.description }}<br>
+            Date: {{ event.date }}<br>
+            Location: {{ event.location }}<br>
+            <a href="{{ url_for('edit_event', tenant_name=tenant_name, id=event.id) }}">Edit</a> | 
+            <a href="{{ url_for('delete_event', tenant_name=tenant_name, id=event.id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
